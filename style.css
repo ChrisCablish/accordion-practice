@@ -1,0 +1,39 @@
+.accordion {
+    width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.accordion__header {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    background-color: #1f8dd6;
+    border-bottom: 1px solid #54a0ff;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion__header.active {
+    background-color: #1070b1;
+}
+.accordion__header.active i {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+}
+
+.accordion__body {
+    padding: 0 1rem;
+    background-color: #f3f3f3;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion__body.active {
+    max-height: 10rem;
+    padding: 1rem;
+}
